@@ -5,3 +5,7 @@ COPY --from=registry.cn-beijing.aliyuncs.com/yunionio/file-repo:v0.2.2 /opt/yuni
 COPY --from=registry.cn-beijing.aliyuncs.com/yunionio/file-repo:v0.2.2 /opt/yunion/ansible-install-pkg /opt/yunion/ansible-install-pkg
 
 ADD ./_output/alpine-build/bin/ansibleserver /opt/yunion/bin/ansibleserver
+
+ADD ./build/ansibleserver/root/etc/yunion/requirement.yaml /etc/yunion/requirement.yaml
+
+RUN /usr/bin/ansible-galaxy install -r /etc/yunion/requirement.yaml
