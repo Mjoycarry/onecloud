@@ -1,0 +1,15 @@
+- src: https://github.com/yunionio/ansible-cboard
+- src: mrlesmithjr.ansible_bootstrap_python
+- src: https://github.com/yunionio/ansible-influxdb
+- src: https://github.com/yunionio/ansible-telegraf
+- src: geerlingguy.java
+- src: https://github.com/yunionio/ansible-role-jenkins
+- name: onecloud-mysql
+  src: https://github.com/yunionio/ansible-role-mysql
+  version: v0.2.0
+- src: geerlingguy.nginx
+- src: mrlesmithjr.rabbitmq
+- src: davidwittman.redis
+- src: https://github.com/yunionio/ansible-role-redis
+- src: zaxos.tomcat-ansible-role
+- src: https://github.com/yunionio/ansible-role-jenkins-slave
