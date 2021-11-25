@@ -574,6 +574,7 @@ func (manager *SElasticcacheSkuManager) GetPropertyCapability(ctx context.Contex
 	if err != nil {
 		return nil, err
 	}
+	defer rows.Close()
 
 	var addNode func(src *jsonutils.JSONDict, keys ...string)
 	// keys至少2位，最后一位为叶子节点
